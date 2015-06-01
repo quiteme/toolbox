@@ -1,0 +1,3 @@
+1.apktool2.0 ：java -jar apktool.jar d -f d:\apktool\Test03.apk -o d:\apktool\test
+2.java -jar apktool.jar b -f d:\apktool\test -o d:\\apktool\\teswt.apk
+3.   jdk bin:  jarsigner -verbose -keystore mykeystore -signedjar android_signed.apk(目标名字) TestSMSDemo.apk(要签名的apk) linlin(这个地方就是上面说要记住的别名 -alias,看有些例子上面这个地方字符串用‘ ’号引起来是错误的，直接写字符串就好了)   注意bin文件的管理员权限

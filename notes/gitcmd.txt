@@ -1,0 +1,22 @@
+设置名字和邮箱
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+创建版本库  git init
+创建本地SSH key 
+ssh-keygen
+关联远程的版本库 $ git remote add origin git@github.com:michaelliao/learngit.git
+
+git pull -u origin master
+关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+git status 查看状态
+git diff查看不同
+添加文件  git add  “”
+提交文件 git commit -m"注释"
+删除 git rm
+误删恢复 git checkout -- test.txt
+克隆版本库 $ git clone git@github.com:michaelliao/gitskills.git
+
+
+git pull
+git push

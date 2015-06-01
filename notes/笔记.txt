@@ -1,0 +1,9 @@
+1. enum 枚举类就是class，而且是一个不可以被继承的final类。其枚举值(RED,BLUE...)都是Color类型的类静态常量
+2. onCreateView是创建的时候调用，onViewCreated是在onCreateView后被触发的事件，前后关系就是fragment中的onCreateView和onViewCreated的区别和联系。
+3. okhttp  https://github.com/square/okhttp   
+4.DDMS 中 sd卡是在mnt文件夹下的sdcard里面
+5.https://dl.google.com/android/ndk/android-ndk-r9-windows-x86_64.zip
+6.备份 $(call import-add-path,$(LOCAL_PATH)/../../cocos2d-x-3.5/cocos)
+7.java持续集成：Jenkins
+
+1183507418@qq.com
