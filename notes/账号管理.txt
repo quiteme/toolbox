@@ -27,3 +27,4 @@ wifi wifi:SSID ÊÇMinistudy,ÃÜÂëÊÇ120613ministudy
 
 
 Â·¾¶£ºC:\Users\jqx\AppData\Roaming\npm
+test
