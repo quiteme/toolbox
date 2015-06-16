@@ -1,0 +1,43 @@
+复制根目录下的my-default.ini,改名为my.ini,my.ini用下面内容替换
+#以下是复制内容，这行可不复制
+[client]
+port=3306
+default-character-set=utf8
+#客户端字符类型，与服务端一致就行，建议utf8
+[mysqld]
+port=3306
+character_set_server=utf8
+#服务端字符类型，建议utf8
+basedir=D:\wamp\mysql
+#解压根目录
+datadir=D:\wamp\mysql\data
+#解压根目录\data
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+[WinMySQLAdmin]
+D:\wamp\mysql\bin\mysqld.exe 
+#解压根目录\bin\mysqld.exe
+
+
+
+mysqld -install 
+
+
+net start mysql
+
+
+sc delete mysql 
+
+
+修改root密码：
+运行中输入cmd ，跳到安装目录/bin下,
+D:\wamp\mysql\bin>mysql -uroot
+mysql>show databases; 
+mysql>use mysql;
+mysql>delete from User where User="";
+mysql>update User set Password=PASSWORD('newpassword') where User='root';
+mysql>FLUSH PRIVILEGES; 
+mysql>quit;
+FLUSH PRIVILEGES:强制让MySQL重新加载权限，即刻生效
+此时登录时可用如下命令：
+D:\wamp\mysql\bin>mysql -uroot -p
+ENTERPASSWORD:newpassword
